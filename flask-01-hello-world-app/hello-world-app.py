@@ -2,8 +2,23 @@ from flask import Flask
 app = Flask(__name__)
 
 
+@app.route('/')
+def head():
+     return "hello world"
 
 
+@app.route('/second')
+def second():
+     return "This is from second page."
+
+@app.route('/third')
+def third():
+     return "This is from third page."
+
+
+@app.route('/fSourth')
+def fourth():
+     return "This is from 4th page."
 
 
 if __name__ == '__main__':
